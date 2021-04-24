@@ -1,6 +1,6 @@
 {
   "name": "async-hooks-state",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "(very) simple AsyncLocalStorage wrapper with no module execution",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "test": "jest",
     "prerelease": "npm run build",
     "release": "standard-version && git push --follow-tags origin main",
-    "prepublish": "npm run release"
+    "prepublish": "npm run release",
+    "publish": ""
   },
   "repository": {
     "type": "git",
