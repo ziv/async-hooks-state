@@ -1,6 +1,6 @@
 {
-  "name": "async-state",
-  "version": "0.0.0",
+  "name": "async-hooks-state",
+  "version": "0.0.1",
   "description": "(very) simple AsyncLocalStorage wrapper with no module execution",
   "main": "index.js",
   "scripts": {
@@ -9,22 +9,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ziv/hooked.git"
+    "url": "git+https://github.com/ziv/async-hooks-state.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ziv/hooked/issues"
+    "url": "https://github.com/ziv/async-hooks-state/issues"
   },
-  "homepage": "https://github.com/ziv/hooked#readme",
+  "homepage": "https://github.com/ziv/async-hooks-state#readme",
   "devDependencies": {
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-typescript": "^7.13.0",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@types/jest": "^26.0.22",
     "@types/node": "^14.14.41",
     "babel-jest": "^26.6.3",
     "express": "^4.17.1",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "ts-loader": "^9.0.2",
     "typescript": "^4.2.4"
