@@ -1,5 +1,6 @@
 .idea
 node_modules
+.npmrc
 
 index.d.ts
 index.js

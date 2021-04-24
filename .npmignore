@@ -1,2 +1,9 @@
+.husky
+node_modules
+.gitignore
+
 *.ts
 !*.d.ts
+
+lib/*.ts
+!lib/*.d.ts
