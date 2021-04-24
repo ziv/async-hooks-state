@@ -6,8 +6,9 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "release": "standard-version",
-    "prepublish": "tsc"
+    "prerelease": "npm run build",
+    "release": "standard-version && git push --follow-tags origin main",
+    "prepublish": "npm run release"
   },
   "repository": {
     "type": "git",
