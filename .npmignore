@@ -1,6 +1,11 @@
 .husky
 node_modules
 .gitignore
+.npmrc
+babel.config.js
+commitlint.config.js
+tsconfig.json
+tsconfig.tsbuildinfo
 
 *.ts
 !*.d.ts

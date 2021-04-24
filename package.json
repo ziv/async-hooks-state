@@ -8,8 +8,7 @@
     "test": "jest",
     "prerelease": "npm run build",
     "release": "standard-version && git push --follow-tags origin main",
-    "prepublish": "npm run release",
-    "publish": "npm publish --public"
+    "prepublish": "npm run release"
   },
   "repository": {
     "type": "git",
