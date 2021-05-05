@@ -29,11 +29,13 @@ import {NextFunction, Request, Response} from 'express';
 
 const app = express();
 
-app.use(hooked(/*optianl context*/));
+const optionalContext = {};
+app.use(hooked(optionalContext));
 
 // later, in any async context
 const route = (req: Request, res: Response, next: NextFunction) => {
     const ctx = getContext();
     const r = getRequest();
     assert(r === req);
+    assert(ctx === optionalContext);
 ```
