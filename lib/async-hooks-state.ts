@@ -2,7 +2,7 @@ import {NextFunction, Request, Response} from 'express';
 import {AsyncLocalStorage as ALC} from 'async_hooks';
 
 export type ContextKey = string | Symbol;
-export type Context = Map<ContextKey, unknown>;
+export type Context = Map<ContextKey, any>;
 
 let storage: ALC<Context>;
 export const RequestSymbol = Symbol('request');
