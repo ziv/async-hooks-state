@@ -1,41 +1,37 @@
 # async-hooks-state
-(very) simple AsyncLocalStorage wrapper with no module execution
+A (very) simple AsyncLocalStorage wrapper with no module execution!
 
 
-## Install
+### Install
 ```shell
 npm i async-hooks-state
 ```
 
 
-## Usage
-Simple `async` usage:
+### Usage
+`expressjs` example:
 ```typescript
-import {startContext, getContext} from 'async-hooks-state';
-
-const data = new Map();
-
-startContext(data, async () => {
-    const ctx = getContext();
-    // data === ctx in any async context
-})
-```
-
-## Express
-
-```typescript
-import {hooked, getContext, getRequest} from 'async-hooks-state';
+import {hooked, getStorage, getRequest} from 'async-hooks-state';
 import {NextFunction, Request, Response} from 'express';
 
 const app = express();
 
-const optionalContext = {};
+const optionalContext = { foo: 'bar' };
 app.use(hooked(optionalContext));
 
 // later, in any async context
 const route = (req: Request, res: Response, next: NextFunction) => {
-    const ctx = getContext();
     const r = getRequest();
     assert(r === req);
-    assert(ctx === optionalContext);
+    assert(getStorage.getStore().get('foo') === 'bar');
+}
 ```
+
+### API
+`hooked(defaultContext: Record<string | number | symbol, unknown> = {})`
+
+`getStorage()`
+
+`getRequest()`
+
+`getResponse()`
