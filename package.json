@@ -2,6 +2,7 @@
   "name": "async-hooks-state",
   "version": "0.0.5",
   "description": "(very) simple AsyncLocalStorage wrapper with no module execution",
+  "keywords": ["async", "hooks", "async hooks", "express", "middleware", "asynclocalstorage"],
   "main": "index.js",
   "scripts": {
     "build": "tsc",
