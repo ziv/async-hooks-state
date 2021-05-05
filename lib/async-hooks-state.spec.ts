@@ -10,8 +10,9 @@ describe('async-hooks-state', () => {
         expect(getStorage()).toBe(getStorage());
     });
 
-    it('should create a function', () => {
-        expect(hooked()).toBeInstanceOf(Function);
-        expect(hooked().length).toBe(3);
+    it('should create a function with 3 args (middleware)', () => {
+        const func = hooked();
+        expect(func).toBeInstanceOf(Function);
+        expect(func.length).toBe(3);
     });
 });
