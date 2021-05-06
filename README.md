@@ -1,6 +1,5 @@
 # async-hooks-state
-A (very) simple AsyncLocalStorage wrapper with no module execution!
-
+A (very) simple AsyncLocalStorage wrapper & `expressjs` middleware.
 
 ### Install
 ```shell
