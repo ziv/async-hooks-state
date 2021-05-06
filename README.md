@@ -23,7 +23,7 @@ app.use(hooked(optionalContext));
 const route = (req: Request, res: Response, next: NextFunction) => {
     const r = getRequest();
     assert(r === req);
-    assert(getStorage.getStore().get('foo') === 'bar');
+    assert(getStorage().getStore().get('foo') === 'bar');
 }
 ```
 
