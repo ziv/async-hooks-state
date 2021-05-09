@@ -1,14 +1,17 @@
 {
   "name": "async-hooks-state",
   "version": "0.0.5",
-  "description": "(very) simple AsyncLocalStorage wrapper with no module execution",
+  "description": "A (very) simple AsyncLocalStorage wrapper/middleware",
   "keywords": [
     "async",
     "hooks",
     "async hooks",
     "express",
     "middleware",
-    "asynclocalstorage"
+    "asynclocalstorage",
+    "local storage",
+    "async storage",
+    "aync context"
   ],
   "main": "index.js",
   "scripts": {
@@ -47,6 +50,19 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/preset-typescript"
     ]
   }
 }

@@ -3,21 +3,13 @@
     "**/*.spec.ts"
   ],
   "compilerOptions": {
-//    "strict": true,
+    "strict": true,
     "module": "commonjs",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-
-    // node 14
-    "lib": ["es2020"],
-    "target": "es2020",
-
-    // node 12
-//    "lib": ["es2019", "es2020.promise", "es2020.bigint", "es2020.string"],
-//    "target": "es2019",
-
-
+    "lib": ["es2019", "es2020.promise", "es2020.bigint", "es2020.string"],
+    "target": "es2019",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
