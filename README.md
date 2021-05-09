@@ -25,12 +25,3 @@ const route = (req: Request, res: Response, next: NextFunction) => {
     assert(getStorage().getStore().get('foo') === 'bar');
 }
 ```
-
-### API
-`hooked(defaultContext: Record<string | number | symbol, unknown> = {})`
-
-`getStorage()`
-
-`getRequest()`
-
-`getResponse()`
