@@ -15,8 +15,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-
     "sourceMap": true,
     "incremental": true
+  },
+  "typedocOptions": {
+    "entryPoints": ["./index.ts"],
+    "out": "docs"
   }
 }
